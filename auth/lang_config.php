@@ -87,9 +87,14 @@ $txt_purchase_form = getTxt("purchase_form");
 function getTxt($nama_teks){
 	global $mysqli; //membuat variable mysqli menjadi global
 	$q = mysqli_query($mysqli,"SELECT * FROM bahasa WHERE text='$nama_teks'");
-	$res = mysqli_fetch_assoc($q);
-	$teks = $res[$_SESSION['lang']];
 	
+	$row = mysqli_num_rows($q);
+	if($row > 0){
+		$res = mysqli_fetch_assoc($q);
+		$teks = $res[$_SESSION['lang']];
+	}else{
+		$teks = "";
+	}
 	return $teks;
 }
 ?>
