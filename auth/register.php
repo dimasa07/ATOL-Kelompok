@@ -1,30 +1,23 @@
 <?php
 	require "lang_config.php";
 ?>
+
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title><?php echo $txt_register ?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/adminlte.min.css">
-	<link rel="stylesheet" href="../css/styles.css">
-	
-</head>
-<body class="hold-transition login-page" style="background-image:url('../gambar/bg-kereta.jpg');
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:cover;">
-	<div class="login-box" style="border:0.5px solid rgba(0,0,0,0.2)">
-		<div class="login-logo" style="border-bottom:1px solid grey; padding:10px;">
-			<a href="login.php"><b>Transportasi Kereta</b></a>
-		</div>
-		<div class="card bg-trans">
-			<div class="card-body login-card-body bg-trans">
-				<p class="login-box-msg"><?php echo $txt_register_caption ?></p>
-				
-				<?php if (!empty($_GET["pesan"])) {
+    <head>
+        <title>Registrasi</title>
+          <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+          <link href="../css/style.css" rel="stylesheet">
+		   <link rel="stylesheet" href="../css/adminlte.min.css">
+    </head>
+ <body>
+    <div id="card">
+        <div id="card-content">
+            <div id="card-title">
+              <h2>Registrasi</h2>
+              <div class="underline-title"></div>
+            </div>
+			<?php if (!empty($_GET["pesan"])) {
 						//pesan jika form kosong
 						if ($_GET["pesan"] == "gagal"){
 				?>
@@ -60,62 +53,53 @@
 					</div>
 				</div>
 				<?php }} ?>
-				
-				<form action="proses_register.php" method="post">
-					<div class="input-group mb-3">
-						<input size="35" type="text" placeholder="Username" name="username" id="username" />
-						<div class="input-group-append">
-							<div class="input-group-text">
-								<span class="fas fa-user"></span>
-							</div>
-						</div>
-					</div>
-					<div class="input-group mb-3">
-						<input size="35" type="text" placeholder="<?php echo $txt_fullname ?>" name="fullname" id="fullname" />
-						<div class="input-group-append">
-							<div class="input-group-text">
-								<span class="fas fa-user"></span>
-							</div>
-						</div>
-					</div>
-					<div class="input-group mb-3">
-						<input size="35" type="password" placeholder="Password" name="password" id="password" />
-						<div class="input-group-append">
-							<div class="input-group-text">
-								<span class="fas fa-lock"></span>
-							</div>
-						</div>
-					</div>					
-					<div class="input-group mb-3">
-						<input size="35" type="password" placeholder="<?php echo $txt_confirm." password" ?>" name="confirm_password" id="confirm_password" />
-						<div class="input-group-append">
-							<div class="input-group-text">
-								<span class="fas fa-lock"></span>
-							</div>
-						</div>
-					</div>
-					<div class="row bg-row">
-						<div class="col-8">
-							<p class="mb-0">
-								<font color="white"><?php echo $txt_have_account ?></font><br><a href="login.php" class="text-center"><b><?php echo $txt_sign ?></b></a>
-							</p>
-						</div>
-						<div class="col-4">
-							<button type="submit" class="btn btn-primary btn-block btnflat"><?php echo $txt_register ?></button>
-						</div>
-					</div>
-				</form>
-				<br>
-				<div class="row bg-row">
-					<div class="col-md-12 ">
-						<div class="text-center">
-							<a href="?lang=indonesia"><b>Indonesia</b></a> <font style="color:white"> | </font>
-							<a href="?lang=inggris"><b>Inggris</b></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+			
+            <form action="proses_register.php" method="post" class="form">
+                <label for="user-password" style="padding-top:22px">&nbsp;Username</label>   
+                <input
+                    class="form-content"
+                    type="text"
+                    name="username"
+                    required />
+                        <div class="form-border"></div>
+                <label for="user-email" style="padding-top:13px">&nbsp;<?php echo $txt_fullname; ?></label>
+                    <input
+                        class="form-content"
+                        type="text"
+                        name="fullname"
+                        autocomplete="of"
+                        required />
+                            <div class="form-border"></div>
+                <label for="user-password" style="padding-top:22px">&nbsp;Password</label>
+                    <input
+                        class="form-content"
+                        type="password"
+                        name="password"
+                        autocomplete="of"
+                        required />
+                            <div class="form-border"></div>
+                <label for="user-password" style="padding-top:22px">&nbsp;Re-Password</label>
+                    <input
+                        class="form-content"
+                        type="password"
+                        name="confirm_password"
+                        required />
+                            <div class="form-border"></div>
+                                <a style="text-align: right" font-family="Raleway Thin"><?php echo $txt_have_account; ?></a>
+                                <a href="login.php"><legend id="forgot-pass"><?php echo $txt_sign; ?></legend></a>
+                                <input id="submit-btn" type="submit" name="submit" value="<?php echo $txt_register; ?>" />
+								<br>
+                                <div class="row">
+									<div class="col-md-12 ">
+									<div class="text-center">
+										<a href="?lang=indonesia" id="signup">indonesia</a> <font color="#2dbd6e"> | </font> 
+										<a href="?lang=inggris" id="signup">Inggris</a>
+									</div>
+									</div>
+								</div>
+                                <!-- <a href="#" id="signup">Don't have account yet?</a> -->
+            </form>
+          </div>
+    </div>
+ </body>
 </html>
