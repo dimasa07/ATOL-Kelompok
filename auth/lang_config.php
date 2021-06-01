@@ -93,7 +93,7 @@ function getTxt($nama_teks){
 		$res = mysqli_fetch_assoc($q);
 		$teks = $res[$_SESSION['lang']];
 	}else{
-		$teks = "";
+		$teks = $nama_teks;
 	}
 	return $teks;
 }
