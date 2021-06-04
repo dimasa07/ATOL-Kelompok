@@ -10,11 +10,12 @@
           <link href="../css/style.css" rel="stylesheet">
 		   <link rel="stylesheet" href="../css/adminlte.min.css">
     </head>
- <body>
+ <body style="background-image: url('../gambar/kereta.jpg'); background-repeat: no-repeat;">
     <div id="card">
         <div id="card-content">
             <div id="card-title">
               <h2>Registrasi</h2>
+			  <br>
               <div class="underline-title"></div>
             </div>
 			<?php if (!empty($_GET["pesan"])) {

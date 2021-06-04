@@ -8,14 +8,16 @@
         <title>Login</title>
 		  <meta charset="utf-8">
           <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-          <link href="../css/style.css" rel="stylesheet">
 		  <link rel="stylesheet" href="../css/adminlte.min.css">
+		  
+          <link href="../css/style.css" rel="stylesheet">
     </head>
- <body>
+ <body style="background-image: url('../gambar/kereta.jpg'); background-repeat: no-repeat;">
     <div id="card">
         <div id="card-content">
             <div id="card-title">
               <h2>Transportasi Kereta</h2>
+			  <br>
               <div class="underline-title"></div>
             </div>
 			
@@ -63,7 +65,6 @@
                             <label for="user-password" style="padding-top:22px">&nbsp;Nama</label> -->
                     <input
                         class="form-content"
-						placeholder="Username"
                         type="text"
                         name="username"
                         autocomplete="of"
@@ -72,7 +73,6 @@
                                 <label for="user-password" style="padding-top:22px">&nbsp;Password</label>
                     <input
                         class="form-content"
-						placeholder="Password"
                         type="password"
                         name="password"
                         required />

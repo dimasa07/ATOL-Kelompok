@@ -8,7 +8,8 @@
                     width: 329px;
                 }
                 body {
-                    background: -webkit-linear-gradient(bottom, #e3ece6, #FDF579);
+                    /* background: -webkit-linear-gradient(bottom, #e3ece6, #FDF579); */
+                    background-image: url("../gambar/kereta.jpg");
                     background-repeat: no-repeat;
                 }
                 #card-content {
@@ -24,8 +25,8 @@
                 .underline-title {
                     background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
                     height: 2px;
-                    margin: -1.1rem auto 0 auto;
-                    width: 94px;
+                    margin: 0.1rem auto 0 auto;
+                    width: 120px;
                 }
                 a {
                     text-decoration: none;
