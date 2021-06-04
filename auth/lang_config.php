@@ -1,10 +1,15 @@
 <?php
-require "db_config.php";
+// set default bahasa
+if(!isset($_SESSION['lang'])){
+	$_SESSION['lang'] = "indonesia";
+}
 
 // set session bahasa
 if(isset($_GET['lang'])) {
 	$_SESSION['lang'] = $_GET['lang'];
 }
+
+require "db_config.php";
 
 // mengambil teks dari database 
 $txt_sign_caption = getTxt("sign_caption");

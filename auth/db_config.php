@@ -1,8 +1,4 @@
 <?php
-// set default bahasa
-if(!isset($_SESSION['lang'])){
-	$_SESSION['lang'] = "indonesia";
-}
 
 // set default timezone
 date_default_timezone_set("Asia/Bangkok");

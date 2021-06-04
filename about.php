@@ -3,6 +3,7 @@
 
 include "auth/lang_config.php";
 ?>
+
 <!doctype html>
 <html lang="en">
   <head>
