@@ -14,7 +14,7 @@ include "auth/lang_config.php";
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
 
-    <title><?php echo $txt_traiin_scheduling; ?></title>
+    <title><?php echo $txt_train_scheduling; ?></title>
   </head>
   <body>
     

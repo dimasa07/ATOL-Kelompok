@@ -17,6 +17,7 @@ $mysqli = new mysqli($host, $user, $pass, $db);
 
 if ($mysqli->connect_errno) {
   echo "Koneksi Gagal !". $mysqli->connect_errno;
+  die;
 } else {
   // Berhasil Konek 
 }

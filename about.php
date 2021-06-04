@@ -18,42 +18,32 @@ include "auth/lang_config.php";
     
 	<?php include "partials/navbar.php"; ?>
 
-<div class="card" style="width: 18rem;">
-  <img src="gambar/kk.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
 
 <div class="container">
   <div class="row">
     <div class="col text-center">
-      <h1>about</h1>
+      <h1><?php echo $txt_about; ?></h1>
     </div>
 </div>
 <div class="row">
   <div class="col">
-    <p>Berkurangnya I/O yang dibutuhkan, sehingga lalu lintas I/O menjadi rendah. 
-
-Berkurangnya memori yang dibutuhkan, ruang tersedia semakin luas.  
-
-Menurunnya beban I/O dan memori, maka respon menjadi meningkat. 
-
-Menambah jumlah user yang dapat dilayani. Karena ruang memori semakin besar tersedia, maka computer dapat menerima permintaan user lebih banyak
-    </p>
+	<h2>APLIKASI TEKNOLOGI ONLINE</h2>
+	<hr>
+	<h3><pre>Kelas     : IF-8</pre></h3>
+	<h3><pre>Kelompok  : EXIT</pre></h3>
+   
   </div>
 
     <div class="col">
-      <p>Berkurangnya I/O yang dibutuhkan, sehingga lalu lintas I/O menjadi rendah. 
-
-Berkurangnya memori yang dibutuhkan, ruang tersedia semakin luas.  
-
-Menurunnya beban I/O dan memori, maka respon menjadi meningkat. 
-
-Menambah jumlah user yang dapat dilayani. Karena ruang memori semakin besar tersedia, maka computer dapat menerima permintaan user lebih banyak</p>
+      <h2>NAMA ANGGOTA</h2>
+	<hr>
+	<font size="4">
+	<pre>Tedi Gios M.      (10119296)</pre>
+	<pre>Zulpani R.        (10119302)</pre>
+	<pre>Ivan Aprilman H.  (10119305)</pre>
+	<pre>Dimas Agung       (10119306)</pre>
+	<pre>Ihsan Taofik      (10119315)</pre>
+	</font>
 </div>
 </div>
 </div>
